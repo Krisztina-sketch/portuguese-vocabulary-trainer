@@ -14,13 +14,13 @@ The aim of the application is to make learning Portuguese enjoyable while demons
 
 The live version of the project can be viewed here:
 
-[Portuguese Vocabulary Trainer](https://YOUR-USERNAME.github.io/YOUR-REPOSITORY-NAME/)
-
+[Portuguese Vocabulary Trainer](https://krisztina-sketch.github.io/portuguese-vocabulary-trainer/)
 ## GitHub Repository
+
 
 The source code for this project is available on GitHub:
 
-[GitHub Repository](https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME)
+[GitHub Repository](https://github.com/Krisztina-sketch/portuguese-vocabulary-trainer)
 
 ## Design
 
@@ -37,6 +37,28 @@ The website was designed with simplicity and ease of use in mind. A clean layout
 - As a user, I want the website to be easy to navigate so that I can quickly access each feature.
 
 ## Features
+
+## Screenshots
+
+### Home Page
+
+![Home Page](assets/images/home-page.png)
+
+### Learn Page
+
+![Learn Page](assets/images/learn-page.png)
+
+### Quiz Page
+
+![Quiz Page](assets/images/quiz-page.png)
+
+### Progress Page
+
+![Progress Page](assets/images/progress-page.png)
+
+### About Page
+
+![About Page](assets/images/about-page.png)
 
 ### Home Page
 
