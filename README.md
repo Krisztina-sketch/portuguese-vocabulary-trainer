@@ -131,7 +131,21 @@ The website was designed with simplicity and ease of use in mind. A clean layout
 
 ## Deployment
 
-The project was deployed using GitHub Pages.
+## Deployment
+
+This project was deployed using GitHub Pages.
+
+### Deployment Steps
+
+1. Log in to GitHub.
+2. Open the Portuguese Vocabulary Trainer repository.
+3. Click the **Settings** tab.
+4. Select **Pages** from the left-hand menu.
+5. Under **Build and Deployment**, select **Deploy from a branch**.
+6. Choose the **main** branch.
+7. Select the **/(root)** folder.
+8. Click **Save**.
+9. After a few minutes, GitHub Pages publishes the website and provides the live URL.
 
 ### Steps to Deploy
 
@@ -144,15 +158,16 @@ The project was deployed using GitHub Pages.
 7. Click **Save**.
 8. After a few moments, the live website becomes available through the GitHub Pages link.
 
+
 ## Credits
 
 ### Content
 
-- Portuguese vocabulary was created for educational purposes.
-- Information included in the project was written by the developer.
+- Portuguese vocabulary and all written content were created by the developer for educational purposes.
 
 ### Media
 
+- All screenshots were created by the developer.
 - No external images were used in this project.
 
 ### Code
