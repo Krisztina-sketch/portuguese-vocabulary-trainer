@@ -38,6 +38,35 @@ The website was designed with simplicity and ease of use in mind. A clean layout
 
 ## Features
 
+- **Home Page**
+  - Welcomes users to the Portuguese Vocabulary Trainer.
+  - Provides an introduction to the purpose of the website.
+  - Includes navigation to all pages.
+
+- **Learn Page**
+  - Displays Portuguese vocabulary words with their English translations.
+  - Users can click the **Next Word** button to cycle through the vocabulary list.
+
+- **Quiz Page**
+  - Presents multiple-choice vocabulary questions.
+  - Gives immediate feedback after each answer.
+  - Calculates and displays the final score.
+  - Allows users to restart the quiz using the **Try Again** button.
+
+- **Progress Page**
+  - Displays learning statistics.
+  - Shows the number of vocabulary words learned.
+  - Shows the number of quiz questions completed.
+  - Displays the overall learning progress percentage.
+
+- **About Page**
+  - Explains the purpose of the project.
+  - Describes how users can use the website to improve their Portuguese vocabulary.
+
+- **Responsive Design**
+  - Built using Bootstrap.
+  - Adapts to desktop, tablet and mobile devices.
+
 ## Screenshots
 
 ### Home Page
@@ -59,6 +88,8 @@ The website was designed with simplicity and ease of use in mind. A clean layout
 ### About Page
 
 ![About Page](assets/images/about-page.png)
+
+## Page Overview
 
 ### Home Page
 
@@ -114,7 +145,7 @@ The website was designed with simplicity and ease of use in mind. A clean layout
 | Home Page | Home page loads correctly | Loaded as expected | ✅ Pass |
 | Learn Page | Next button displays the next vocabulary word | Worked correctly | ✅ Pass |
 | Quiz Page | Quiz checks answers and calculates the score | Worked correctly | ✅ Pass |
-| Progress Page | Displays the last and best quiz scores | Worked correctly | ✅ Pass |
+| | Progress Page | Displays vocabulary progress and completion statistics | Worked correctly | ✅ Pass |
 | About Page | Displays information about the project | Worked correctly | ✅ Pass |
 
 ## Bugs
@@ -129,7 +160,7 @@ The website was designed with simplicity and ease of use in mind. A clean layout
 
 - No known bugs at the time of submission.
 
-## Deployment
+
 
 ## Deployment
 
@@ -146,18 +177,6 @@ This project was deployed using GitHub Pages.
 7. Select the **/(root)** folder.
 8. Click **Save**.
 9. After a few minutes, GitHub Pages publishes the website and provides the live URL.
-
-### Steps to Deploy
-
-1. Log in to GitHub.
-2. Open the project repository.
-3. Select the **Settings** tab.
-4. Click **Pages** from the left-hand menu.
-5. Under **Source**, choose **Deploy from a branch**.
-6. Select the **main** branch.
-7. Click **Save**.
-8. After a few moments, the live website becomes available through the GitHub Pages link.
-
 
 ## Credits
 
