@@ -24,7 +24,24 @@ The source code for this project is available on GitHub:
 
 ## Design
 
-The website was designed with simplicity and ease of use in mind. A clean layout, consistent colour scheme, and clear navigation make it easy for users to move between pages. Bootstrap 5 was used to create a responsive design so the application works well on different screen sizes. The green navigation bar reflects the colours of the Portuguese flag, while the white background improves readability. Large headings, buttons, and cards help users quickly understand how to use the application.
+The website was designed with simplicity and ease of use in mind. A clean layout, consistent colour scheme, and clear navigation make it easy for users to move between pages. Bootstrap 5 was used to create a responsive design so the application works well on different screen sizes. The green navigation bar is inspired by  the colours of the Portuguese flag, while the white background improves readability. Large headings, buttons, and cards help users quickly understand how to use the application.
+
+## Wireframes
+
+Wireframes were created during the planning stage of the project to outline the structure and layout of each page before development.
+
+The wireframes include:
+
+- Home Page
+- Learn Page
+- Quiz Page
+- Progress Page
+- About Page
+
+They helped to plan the user journey, navigation structure, and placement of interactive elements.
+### Homepage Wireframe
+
+![Homepage Wireframe](assets/homepage-wireframe.jpg)
 
 ## User Stories
 
@@ -54,10 +71,14 @@ The website was designed with simplicity and ease of use in mind. A clean layout
   - Allows users to restart the quiz using the **Try Again** button.
 
 - **Progress Page**
-  - Displays learning statistics.
-  - Shows the number of vocabulary words learned.
-  - Shows the number of quiz questions completed.
-  - Displays the overall learning progress percentage.
+  -| Feature | Expected Result | Actual Result | Status |
+|---------|-----------------|---------------|--------|
+| Navigation Bar | All links open the correct page | All links worked correctly | ✅ Pass |
+| Home Page | Home page loads correctly | Loaded as expected | ✅ Pass |
+| Learn Page | Next button displays the next vocabulary word | Worked correctly | ✅ Pass |
+| Quiz Page | Quiz checks answers and calculates the score | Worked correctly | ✅ Pass |
+| Progress Page | Displays vocabulary progress and completion statistics | Worked correctly | ✅ Pass |
+| About Page | Displays information about the project | Worked correctly | ✅ Pass |
 
 - **About Page**
   - Explains the purpose of the project.
@@ -112,14 +133,16 @@ The website was designed with simplicity and ease of use in mind. A clean layout
 
 ### Progress Page
 
-- Displays the user's most recent quiz score.
-- Shows the highest score achieved.
-- Uses Local Storage to save progress even after refreshing the page.
+- Displays the user's learning statistics.
+- Shows vocabulary progress and quiz results.
+- Uses Local Storage to save user progress.
 
 ### About Page
 
-- Explains the purpose of the website.
-- Describes how the application helps users learn Portuguese vocabulary.
+- Explains the purpose of the application.
+- Provides information about the project and learning goals.
+
+
 
 ## Technologies Used
 
