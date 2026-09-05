@@ -120,6 +120,22 @@ Wireframes were produced before development to plan the page structure, navigati
 
 Testing was carried out against the project features and user stories. The revised project also separates custom CSS from HTML and includes comments explaining the JavaScript logic.
 
+### HTML and CSS Validation
+
+All HTML pages were validated using the W3C Nu HTML Checker.
+
+- index.html - Passed with no errors or warnings
+- about.html - Passed with no errors or warnings
+- learn.html - Passed with no errors or warnings
+- quiz.html - Passed with no errors or warnings
+- progress.html - Passed with no errors or warnings
+
+During validation, an empty heading warning was identified on the quiz page and corrected. A heading hierarchy issue was also identified on the progress page and corrected.
+
+The CSS was validated using the W3C CSS Validation Service.
+
+- assets/css/style.css - Passed with no errors
+
 ### Manual Functional Testing
 
 | Test | Expected Result | Actual Result | Status |
