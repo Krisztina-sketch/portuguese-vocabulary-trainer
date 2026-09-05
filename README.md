@@ -279,12 +279,6 @@ The project is deployed using GitHub Pages.
 - Project screenshots and wireframes are stored in the repository.
 - Bootstrap 5 documentation and MDN Web Docs were used as technical references.
 
-## AI Assistance
-
-Generative AI (ChatGPT by OpenAI) was used extensively during development and revision of this project, including assistance with JavaScript, code structure, debugging and documentation. Because the JavaScript files were substantially AI-assisted, this is stated directly in comments at the top of `assets/js/learn.js` and `assets/js/quiz.js` rather than presenting any part of those files as independently written code.
-
-The AI-assisted code was reviewed, tested and integrated into the project. The project owner should be able to explain the purpose of the main functions and event listeners before resubmission.
-
 ## Future Improvements
 
 - Add more vocabulary categories and words.
