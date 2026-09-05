@@ -207,6 +207,10 @@ The JavaScript files were checked using Node's syntax checker:
 ```bash
 node --check assets/js/learn.js
 node --check assets/js/quiz.js
+```
+
+Both JavaScript files completed the syntax check without errors.
+
 ### HTML and CSS Validation
 
 All HTML pages were validated using the W3C Nu HTML Checker.
