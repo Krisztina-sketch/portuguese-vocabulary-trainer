@@ -207,6 +207,40 @@ The JavaScript files were checked using Node's syntax checker:
 ```bash
 node --check assets/js/learn.js
 node --check assets/js/quiz.js
+### HTML and CSS Validation
+
+All HTML pages were validated using the W3C Nu HTML Checker.
+
+- `index.html` - Passed with no errors or warnings
+- `about.html` - Passed with no errors or warnings
+- `learn.html` - Passed with no errors or warnings
+- `quiz.html` - Passed with no errors or warnings
+- `progress.html` - Passed with no errors or warnings
+
+During validation, an empty heading warning was identified on the Quiz page and corrected. A heading hierarchy issue was identified on the Progress page and corrected.
+
+The CSS was validated using the W3C CSS Validation Service.
+
+- `assets/css/style.css` - Passed with no errors
+
+### Validation Evidence
+
+#### HTML Validation
+
+![Index HTML validation](assets/images/testing/html-index-validation.png)
+
+![About HTML validation](assets/images/testing/html-about-validation.png)
+
+![Learn HTML validation](assets/images/testing/html-learn-validation.png)
+
+![Quiz HTML validation](assets/images/testing/html-quiz-validation.png)
+
+![Progress HTML validation](assets/images/testing/html-progress-validation.png)
+
+#### CSS Validation
+
+![CSS validation](assets/images/testing/css-validation.png)
+
 ## Bugs
 
 ### Fixed Bugs
