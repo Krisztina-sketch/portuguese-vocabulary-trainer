@@ -136,6 +136,24 @@ The CSS was validated using the W3C CSS Validation Service.
 
 - assets/css/style.css - Passed with no errors
 
+### Validation Evidence
+
+#### HTML Validation
+
+![Index HTML validation](assets/images/testing/html-index-validation.png)
+
+![About HTML validation](assets/images/testing/html-about-validation.png)
+
+![Learn HTML validation](assets/images/testing/html-learn-validation.png)
+
+![Quiz HTML validation](assets/images/testing/html-quiz-validation.png)
+
+![Progress HTML validation](assets/images/testing/html-progress-validation.png)
+
+#### CSS Validation
+
+![CSS validation](assets/images/testing/css-validation.png)
+
 ### Manual Functional Testing
 
 | Test | Expected Result | Actual Result | Status |
