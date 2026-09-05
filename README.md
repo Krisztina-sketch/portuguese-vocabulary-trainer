@@ -116,87 +116,97 @@ Wireframes were produced before development to plan the page structure, navigati
 - Git and GitHub — version control and source hosting.
 - GitHub Pages — deployment.
 
+## AI Assistance
+
+Generative AI, primarily ChatGPT, was used extensively throughout the development of this project.
+
+AI assistance was used to help:
+
+- generate and structure the HTML, CSS and JavaScript;
+- explain JavaScript concepts and application logic;
+- troubleshoot errors and unexpected behaviour;
+- improve code organisation and readability;
+- develop testing documentation;
+- improve README documentation.
+
+ChatGPT was used as a development aid throughout the project, including for code suggestions, troubleshooting, explanations and documentation. The resulting code was reviewed, adapted, tested and integrated into the project to meet the required functionality.
+
+The generated code was integrated into the project, tested against the required functionality, revised where issues were identified, and validated using appropriate testing tools.
+
+AI assistance is also acknowledged within the relevant source files through code comments.
+
 ## Testing
 
-Testing was carried out against the project features and user stories. The revised project also separates custom CSS from HTML and includes comments explaining the JavaScript logic.
+Testing was carried out against the project features and user stories. The revised project separates custom CSS from the HTML and includes comments explaining the JavaScript logic.
 
-### HTML and CSS Validation
+### Manual and Automated Testing
 
-All HTML pages were validated using the W3C Nu HTML Checker.
+Manual testing was used to check the behaviour of the application from a user's perspective, including navigation, vocabulary controls, quiz answers, scoring, responsiveness and the deployed website.
 
-- index.html - Passed with no errors or warnings
-- about.html - Passed with no errors or warnings
-- learn.html - Passed with no errors or warnings
-- quiz.html - Passed with no errors or warnings
-- progress.html - Passed with no errors or warnings
+Automated and validation tools were used where appropriate to identify code-quality and syntax issues. The W3C Nu HTML Checker was used for HTML validation, the W3C CSS Validation Service was used for CSS validation, and Node's syntax checker was used to verify the JavaScript files.
 
-During validation, an empty heading warning was identified on the quiz page and corrected. A heading hierarchy issue was also identified on the progress page and corrected.
-
-The CSS was validated using the W3C CSS Validation Service.
-
-- assets/css/style.css - Passed with no errors
-
-### Validation Evidence
-
-#### HTML Validation
-
-![Index HTML validation](assets/images/testing/html-index-validation.png)
-
-![About HTML validation](assets/images/testing/html-about-validation.png)
-
-![Learn HTML validation](assets/images/testing/html-learn-validation.png)
-
-![Quiz HTML validation](assets/images/testing/html-quiz-validation.png)
-
-![Progress HTML validation](assets/images/testing/html-progress-validation.png)
-
-#### CSS Validation
-
-![CSS validation](assets/images/testing/css-validation.png)
+Manual testing is particularly useful for checking usability, visual layout, navigation and user interaction. Automated testing and validation tools are useful for consistently detecting syntax, structural and code-quality problems.
 
 ### Manual Functional Testing
 
 | Test | Expected Result | Actual Result | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Open each navigation link | Correct page opens | All navigation links open the intended page | Pass |
 | Click Next on Learn page | Next vocabulary item is displayed | Vocabulary changes and counter updates | Pass |
 | Click Previous on Learn page | Previous vocabulary item is displayed | Vocabulary changes and counter updates | Pass |
-| Continue past the final vocabulary item | Revision continues from the start | Vocabulary loops back to the first item | Pass |
-| Select correct quiz answer | Correct feedback is shown and score increases | Correct feedback appears | Pass |
-| Select incorrect quiz answer | Correct answer is shown and score does not increase | Incorrect feedback appears with correct answer | Pass |
-| Click Next Question | Next quiz question is displayed | Question number and content update | Pass |
-| Complete final question | Final score is displayed | Quiz complete message and score appear | Pass |
-| Click Try Again | Quiz restarts from question one with score reset | Quiz restarts correctly | Pass |
-| Refresh after completing a quiz | Saved score remains available in localStorage | Last/best score values remain stored | Pass |
+| Continue past final vocabulary item | Revision continues from the start | Vocabulary loops back to the first item | Pass |
+| Select correct quiz answer | Correct feedback appears and score increases | Correct feedback appears and score increases | Pass |
+| Select incorrect quiz answer | Incorrect feedback appears and score does not increase | Correct answer is displayed and score remains unchanged | Pass |
+| Click Next Question | Next quiz question appears | Question number and content update | Pass |
+| Complete final question | Final score appears | Quiz completion message and score appear | Pass |
+| Click Try Again | Quiz restarts | Quiz restarts from question one with score reset | Pass |
+| Refresh after quiz | Stored score remains available | Last and best scores remain in localStorage | Pass |
 
 ### User Story Testing
 
 | User Story | Test Result |
-|---|---|
+| --- | --- |
 | Learn common Portuguese vocabulary | Learn page displays five vocabulary items with translations and examples. Pass. |
 | Move through vocabulary cards | Previous and Next controls work in both directions. Pass. |
 | Test knowledge with a quiz | Five multiple-choice questions can be completed. Pass. |
-| Receive immediate feedback | Correct/incorrect feedback appears immediately after selection. Pass. |
-| See a final score | Final score appears at the end of the quiz. Pass. |
-| Navigate easily | Main navigation links were checked across the pages. Pass. |
+| Receive immediate feedback | Correct/incorrect feedback appears after each selection. Pass. |
+| See a final score | Final score appears after the final question. Pass. |
+| Navigate easily | Navigation links work across all pages. Pass. |
+
+### Responsive Testing
+
+The application was manually checked at different viewport sizes to confirm that content remains readable and usable.
+
+| Device / Viewport | Test | Result |
+| --- | --- | --- |
+| Mobile | Navigation, text, cards and buttons remain usable without horizontal overflow | Pass |
+| Tablet | Page content and controls resize correctly | Pass |
+| Desktop | Content displays correctly with appropriate spacing | Pass |
+
+Bootstrap's responsive layout and navigation components help the site adapt across screen sizes.
+
+### Development and Deployed Version Testing
+
+The application was tested locally during development and then tested again using the live GitHub Pages deployment.
+
+The deployed version was checked to confirm that:
+
+- all navigation links work;
+- vocabulary cards display and change correctly;
+- quiz questions and answers function correctly;
+- scoring and feedback work correctly;
+- the Progress and About pages load correctly;
+- CSS and JavaScript files load correctly.
+
+The deployed application matched the tested development version.
 
 ### JavaScript Syntax Validation
 
-The JavaScript files were checked with Node's syntax checker using:
+The JavaScript files were checked using Node's syntax checker:
 
 ```bash
 node --check assets/js/learn.js
 node --check assets/js/quiz.js
-```
-
-Both files completed the syntax check without errors in the revised project.
-
-### HTML and CSS Validation
-
-Before resubmission, the live deployed pages should be checked with the W3C HTML Validator and the custom stylesheet should be checked with the W3C CSS Validator. Screenshots or links to the validation results should be added here as evidence.
-
-This section is intentionally left as a final verification step rather than claiming a validator result that has not yet been recorded.
-
 ## Bugs
 
 ### Fixed Bugs

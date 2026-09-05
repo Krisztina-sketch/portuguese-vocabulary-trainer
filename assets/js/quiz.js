@@ -1,6 +1,6 @@
 /*
 AI assistance disclosure:
-This JavaScript file was created with substantial assistance from ChatGPT.
+This JavaScript file was created with assistance from ChatGPT.
 The code was reviewed, tested and integrated into the project during revision.
 The comments below explain the purpose of each main section.
 */
