@@ -1,3 +1,11 @@
+/*
+AI assistance disclosure:
+This JavaScript file was created with substantial assistance from ChatGPT.
+The code was reviewed, tested and integrated into the project during revision.
+The comments below explain the purpose of each main section.
+*/
+
+// Vocabulary data displayed on the Learn page.
 const vocabulary = [
     {
         portuguese: "Olá",
@@ -28,6 +36,7 @@ const vocabulary = [
 
 let currentIndex = 0;
 
+// Cache the page elements that are updated by JavaScript.
 const portugueseWord = document.getElementById("portuguese-word");
 const englishWord = document.getElementById("english-word");
 const exampleSentence = document.getElementById("example-sentence");
@@ -36,6 +45,7 @@ const totalNumber = document.getElementById("total-number");
 const previousButton = document.getElementById("previous-button");
 const nextButton = document.getElementById("next-button");
 
+// Display the vocabulary item at the current array position.
 function displayWord() {
     const currentWord = vocabulary[currentIndex];
 
@@ -45,6 +55,7 @@ function displayWord() {
     currentNumber.textContent = currentIndex + 1;
 }
 
+// Move forward through the vocabulary list, looping after the final item.
 nextButton.addEventListener("click", function () {
     currentIndex++;
 
@@ -55,6 +66,7 @@ nextButton.addEventListener("click", function () {
     displayWord();
 });
 
+// Move backwards through the vocabulary list, looping before the first item.
 previousButton.addEventListener("click", function () {
     currentIndex--;
 
@@ -65,5 +77,6 @@ previousButton.addEventListener("click", function () {
     displayWord();
 });
 
+// Initialise the counter and first vocabulary card.
 totalNumber.textContent = vocabulary.length;
 displayWord();

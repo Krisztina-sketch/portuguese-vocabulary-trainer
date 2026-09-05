@@ -1,3 +1,11 @@
+/*
+AI assistance disclosure:
+This JavaScript file was created with substantial assistance from ChatGPT.
+The code was reviewed, tested and integrated into the project during revision.
+The comments below explain the purpose of each main section.
+*/
+
+// Quiz data: Portuguese prompt, answer choices and correct answer index.
 const questions = [
     {
         question: "Olá",
@@ -29,6 +37,7 @@ const questions = [
 let currentQuestion = 0;
 let score = 0;
 
+// Cache elements used by the quiz interface.
 const questionWord = document.getElementById("question-word");
 const answerOptions = document.getElementById("answer-options");
 const feedback = document.getElementById("feedback");
@@ -38,6 +47,7 @@ const nextButton = document.getElementById("next-question-button");
 
 totalQuestions.textContent = questions.length;
 
+// Render the current question and create a button for each answer choice.
 function showQuestion() {
     feedback.textContent = "";
     nextButton.classList.add("d-none");
@@ -62,6 +72,7 @@ function showQuestion() {
     });
 }
 
+// Check the selected answer, update the score and show feedback.
 function checkAnswer(selectedAnswer) {
     const question = questions[currentQuestion];
     const answerButtons = answerOptions.querySelectorAll("button");
@@ -72,28 +83,25 @@ function checkAnswer(selectedAnswer) {
 
     if (selectedAnswer === question.correct) {
         score = score + 1;
-
         feedback.textContent = "✅ Correct!";
         feedback.className = "text-success fw-bold mt-3";
     } else {
         const correctAnswer = question.answers[question.correct];
-
-        feedback.textContent = `❌ Wrong answer. The correct answer is ${correctAnswer}.`;
+        feedback.textContent =
+            `❌ Wrong answer. The correct answer is ${correctAnswer}.`;
         feedback.className = "text-danger fw-bold mt-3";
     }
 
     nextButton.classList.remove("d-none");
 }
 
+// Show the final score and save last/best results in localStorage.
 function showResults() {
     questionWord.textContent = "Quiz complete!";
     questionNumber.textContent = questions.length;
-
     answerOptions.innerHTML = "";
-
     feedback.textContent = `You scored ${score} out of ${questions.length}.`;
     feedback.className = "text-success fw-bold mt-3";
-
     nextButton.textContent = "Try Again";
     nextButton.classList.remove("d-none");
 
@@ -108,6 +116,7 @@ function showResults() {
     }
 }
 
+// Advance to the next question, show results, or restart the quiz.
 nextButton.addEventListener("click", function () {
     if (currentQuestion < questions.length - 1) {
         currentQuestion = currentQuestion + 1;
@@ -122,4 +131,5 @@ nextButton.addEventListener("click", function () {
     }
 });
 
+// Load the first question when the page opens.
 showQuestion();
